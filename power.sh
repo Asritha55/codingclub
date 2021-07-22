@@ -1,15 +1,13 @@
-echo "Input number"
-read no
-echo "Input power"
+echo "enter any number:"
+read n
+echo "enter any power:"
 read power
-
 counter=0
-ans=1
+res=1
 while [ $power -ne $counter ]
 do
-        ans=`expr $ans \* $no`
-        counter=`expr $counter + 1`
+res=`expr $res\* $n`
+counter=`expr $counter + 1`
 done
-
-echo "$no power of $power is $ans"
+echo "$n power of $power is $res"
  
